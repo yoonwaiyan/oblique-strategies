@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Fragment, Component } from "react";
 
 class ObliqueStrategy extends Component {
   state = {
@@ -6,21 +6,42 @@ class ObliqueStrategy extends Component {
     strategyIndex: 0
   };
 
+  getStrategy = () => {
+    const { strategies } = this.state;
+    const strategyIndex = Math.floor(Math.random() * strategies.length) + 1;
+
+    return { strategyIndex };
+  };
+
+  getAnotherStrategy = () => {
+    const { strategyIndex } = this.getStrategy();
+
+    this.setState({ strategyIndex });
+  };
+
   componentDidMount() {
     const { edition } = this.props;
     const strategies = require(`../editions/${edition}`).default;
+    const { strategyIndex } = this.getStrategy();
 
-    this.setState({ strategies });
+    this.setState({ strategies, strategyIndex });
   }
 
   render() {
-    const { strategies } = this.state;
+    const { strategies, strategyIndex } = this.state;
 
     if (strategies.length <= 0) {
       return <div>- blank -</div>;
     }
 
-    return <div>{strategies[0]}</div>;
+    return (
+      <Fragment>
+        <div>{strategies[strategyIndex]}</div>
+        <a href="#" onClick={this.getAnotherStrategy}>
+          Get another strategy
+        </a>
+      </Fragment>
+    );
   }
 }
 
