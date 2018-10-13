@@ -1,4 +1,5 @@
 import React, { Fragment, Component } from "react";
+import './ObliqueStrategy.css';
 
 const editions = {
   1: "First Edition",
@@ -54,14 +55,14 @@ class ObliqueStrategy extends Component {
 
     return (
       <Fragment>
-        <div>{strategy}</div>
-        <a href="#" onClick={this.getAnotherStrategy}>
+        <div className="strategy">{strategy}</div>
+        <button onClick={this.getAnotherStrategy}>
           Get another strategy
-        </a>
+        </button>
         <div>
         {Object.keys(editions).map(edition => (
-          <span key={edition}>
-            <a href="#" onClick={() => this.changeEdition(edition)}>{editions[edition]}</a>
+          <span key={edition} className="change-edition">
+            <button onClick={() => this.changeEdition(edition)}>{editions[edition]}</button>
           </span>
         ))}
         </div>
