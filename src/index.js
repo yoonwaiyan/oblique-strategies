@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <h1>Oblique Strategies</h1>
-      <ObliqueStrategy edition={4} />
+      <ObliqueStrategy />
     </div>
   );
 }
