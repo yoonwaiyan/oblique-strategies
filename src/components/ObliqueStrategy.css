@@ -1,8 +1,13 @@
-.strategy {
-  font-size: 2rem;
-  text-transform: uppercase;
+.card-container {
+  margin: 50px auto;
+  min-width: 320px;
+  max-width: 640px;
 }
 
-.change-edition {
-  padding: 5px;
+.strategy {
+  font-size: 1.67rem;
+  text-transform: uppercase;
+  line-height: 2rem;
+
+  padding: 50px 20px;
 }

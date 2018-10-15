@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import ObliqueStrategy from "./components/ObliqueStrategy";
 
-import "./css_reset.css";
+import 'semantic-ui-css/semantic.min.css';
 import "./styles.css";
 
 function App() {

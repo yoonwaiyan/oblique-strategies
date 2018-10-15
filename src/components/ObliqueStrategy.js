@@ -1,4 +1,5 @@
 import React, { Fragment, Component } from "react";
+import { Button, Card, Grid } from 'semantic-ui-react';
 import './ObliqueStrategy.css';
 
 const editions = {
@@ -55,15 +56,24 @@ class ObliqueStrategy extends Component {
 
     return (
       <Fragment>
-        <div className="strategy">{strategy}</div>
-        <button onClick={this.getAnotherStrategy}>
-          Get another strategy
-        </button>
+        <div className="card-container">
+          <Card fluid>
+            <Card.Content>
+              <div className="strategy">{strategy}</div>
+            </Card.Content>
+            <Card.Content extra>
+              <div className='ui two buttons'>
+                <Button color="grey" onClick={this.getAnotherStrategy}>
+                  Get another strategy
+                </Button>
+              </div>
+            </Card.Content>
+          </Card>
+        </div>
+        
         <div>
         {Object.keys(editions).map(edition => (
-          <span key={edition} className="change-edition">
-            <button onClick={() => this.changeEdition(edition)}>{editions[edition]}</button>
-          </span>
+          <Button color="yellow" onClick={() => this.changeEdition(edition)}>{editions[edition]}</Button>
         ))}
         </div>
       </Fragment>
