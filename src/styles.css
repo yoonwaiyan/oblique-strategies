@@ -7,8 +7,10 @@
 }
 
 .title {
-  font-family: 'Secular One', sans-serif;
-  text-transform: capitalize;
+  font-family: "Helvatica", sans-serif;
+  color: #ffffff;
+  padding-top: 100px;
+  text-transform: uppercase;
   letter-spacing: 1.5px;
   font-size: 5rem;
   font-weight: 900;

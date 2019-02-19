@@ -4,28 +4,28 @@ self.__precacheManifest = [
     "url": "/oblique-strategies/static/media/icons.faff9214.woff"
   },
   {
-    "revision": "435532a54eb6c9ccd142",
-    "url": "/oblique-strategies/static/css/main.c0ce581e.chunk.css"
+    "revision": "3e8ec71dc8e2dd649826",
+    "url": "/oblique-strategies/static/css/main.e3307ee2.chunk.css"
   },
   {
     "revision": "a1a749e89f578a49306ec2b055c073da",
     "url": "/oblique-strategies/static/media/brand-icons.a1a749e8.svg"
   },
   {
-    "revision": "b2ec9e3f1d0215bbc60c",
-    "url": "/oblique-strategies/static/js/1.b2ec9e3f.chunk.js"
+    "revision": "8416a7147b9e0056618f",
+    "url": "/oblique-strategies/static/js/1.8416a714.chunk.js"
   },
   {
     "revision": "329a08eccd47fb8c82f0",
     "url": "/oblique-strategies/static/js/runtime~main.329a08ec.js"
   },
   {
-    "revision": "ef60a4f6c25ef7f39f2d25a748dbecfe",
-    "url": "/oblique-strategies/static/media/outline-icons.ef60a4f6.woff"
-  },
-  {
     "revision": "cd6c777f1945164224dee082abaea03a",
     "url": "/oblique-strategies/static/media/outline-icons.cd6c777f.woff2"
+  },
+  {
+    "revision": "ef60a4f6c25ef7f39f2d25a748dbecfe",
+    "url": "/oblique-strategies/static/media/outline-icons.ef60a4f6.woff"
   },
   {
     "revision": "701ae6abd4719e9c2ada3535a497b341",
@@ -44,8 +44,8 @@ self.__precacheManifest = [
     "url": "/oblique-strategies/static/media/icons.0ab54153.woff2"
   },
   {
-    "revision": "435532a54eb6c9ccd142",
-    "url": "/oblique-strategies/static/js/main.435532a5.chunk.js"
+    "revision": "3e8ec71dc8e2dd649826",
+    "url": "/oblique-strategies/static/js/main.3e8ec71d.chunk.js"
   },
   {
     "revision": "e8c322de9658cbeb8a774b6624167c2c",
@@ -80,11 +80,11 @@ self.__precacheManifest = [
     "url": "/oblique-strategies/static/media/icons.962a1bf3.svg"
   },
   {
-    "revision": "b2ec9e3f1d0215bbc60c",
-    "url": "/oblique-strategies/static/css/1.ae3fd990.chunk.css"
+    "revision": "8416a7147b9e0056618f",
+    "url": "/oblique-strategies/static/css/1.c3762ad7.chunk.css"
   },
   {
-    "revision": "21f427c2927736489827f252eceff6ce",
+    "revision": "5dcc8a960793aae810defd4af2d377bd",
     "url": "/oblique-strategies/index.html"
   }
 ];

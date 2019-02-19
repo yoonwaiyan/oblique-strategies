@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "/oblique-strategies/precache-manifest.5eee62f8467932f0a4fb15b6f5041a09.js"
+  "/oblique-strategies/precache-manifest.a0bd5c6f6073a8288f1af611a61eda4a.js"
 );
 
 workbox.clientsClaim();

@@ -2,7 +2,7 @@ import React, { Fragment, Component } from 'react';
 import { Button, Card } from 'semantic-ui-react';
 import stategiesSet from '../editions';
 
-import './ObliqueStrategy.css';
+import './ObliqueStrategy.scss';
 
 const editions = {
   1: 'First Edition',
