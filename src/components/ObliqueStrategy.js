@@ -61,9 +61,13 @@ class ObliqueStrategy extends Component {
           </Button>
         </div>
 
-        <div>
+        <div className="switch-edition">
           {Object.keys(editions).map((edition, index) => (
-            <Button key={index} onClick={() => this.changeEdition(edition)}>
+            <Button
+              className="edition-button"
+              key={index}
+              onClick={() => this.changeEdition(edition)}
+            >
               {editions[edition]}
             </Button>
           ))}

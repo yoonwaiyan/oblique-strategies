@@ -9,9 +9,15 @@
 
 .strategy {
   color: $text-color;
-  font-size: 1.47rem;
-  text-transform: uppercase;
-  line-height: 2rem;
+  font-size: 1.4em;
 
-  padding: 50px 20px;
+  padding: 50px 20px 40px 20px;
+}
+
+.switch-edition {
+  padding-top: 50px;
+}
+
+.edition-button {
+  font-size: 0.9em;
 }
