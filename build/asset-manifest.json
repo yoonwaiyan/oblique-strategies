@@ -1,13 +1,16 @@
 {
-  "main.css": "/oblique-strategies/static/css/main.3a51f0a2.chunk.css",
-  "main.js": "/oblique-strategies/static/js/main.c7c1643a.chunk.js",
-  "main.js.map": "/oblique-strategies/static/js/main.c7c1643a.chunk.js.map",
-  "static/js/1.219974e9.chunk.js": "/oblique-strategies/static/js/1.219974e9.chunk.js",
-  "static/js/1.219974e9.chunk.js.map": "/oblique-strategies/static/js/1.219974e9.chunk.js.map",
+  "main.css": "/oblique-strategies/static/css/main.c0ce581e.chunk.css",
+  "main.js": "/oblique-strategies/static/js/main.435532a5.chunk.js",
+  "main.js.map": "/oblique-strategies/static/js/main.435532a5.chunk.js.map",
+  "static/css/1.ae3fd990.chunk.css": "/oblique-strategies/static/css/1.ae3fd990.chunk.css",
+  "static/js/1.b2ec9e3f.chunk.js": "/oblique-strategies/static/js/1.b2ec9e3f.chunk.js",
+  "static/js/1.b2ec9e3f.chunk.js.map": "/oblique-strategies/static/js/1.b2ec9e3f.chunk.js.map",
   "runtime~main.js": "/oblique-strategies/static/js/runtime~main.329a08ec.js",
   "runtime~main.js.map": "/oblique-strategies/static/js/runtime~main.329a08ec.js.map",
-  "static/css/main.3a51f0a2.chunk.css.map": "/oblique-strategies/static/css/main.3a51f0a2.chunk.css.map",
+  "static/media/semantic.min.css": "/oblique-strategies/static/media/brand-icons.a1a749e8.svg",
+  "static/css/1.ae3fd990.chunk.css.map": "/oblique-strategies/static/css/1.ae3fd990.chunk.css.map",
+  "static/css/main.c0ce581e.chunk.css.map": "/oblique-strategies/static/css/main.c0ce581e.chunk.css.map",
   "index.html": "/oblique-strategies/index.html",
-  "precache-manifest.bde1ec84ba482b9b1711445a0cb52597.js": "/oblique-strategies/precache-manifest.bde1ec84ba482b9b1711445a0cb52597.js",
+  "precache-manifest.5eee62f8467932f0a4fb15b6f5041a09.js": "/oblique-strategies/precache-manifest.5eee62f8467932f0a4fb15b6f5041a09.js",
   "service-worker.js": "/oblique-strategies/service-worker.js"
 }
