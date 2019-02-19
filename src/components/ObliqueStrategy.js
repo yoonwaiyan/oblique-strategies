@@ -1,11 +1,12 @@
-import React, { Fragment, Component } from "react";
+import React, { Fragment, Component } from 'react';
+import stategiesSet from '../editions';
 
 const editions = {
-  1: "First Edition",
-  2: "Second Edition",
-  3: "Third Edition",
-  4: "Fourth Edition"
-}
+  1: 'First Edition',
+  2: 'Second Edition',
+  3: 'Third Edition',
+  4: 'Fourth Edition'
+};
 
 class ObliqueStrategy extends Component {
   state = {
@@ -14,32 +15,27 @@ class ObliqueStrategy extends Component {
     strategyIndex: 0
   };
 
-  getStrategy = () => {
-    const { strategies } = this.state;
+  getStrategy = strategies => {
     const strategyIndex = Math.floor(Math.random() * strategies.length) + 1;
 
     return { strategyIndex };
   };
 
   getAnotherStrategy = () => {
-    const { strategyIndex } = this.getStrategy();
+    const { strategyIndex } = this.getStrategy(this.state.strategies);
 
     this.setState({ strategyIndex });
   };
 
-  changeEdition = (edition) => {
-    const strategies = this.loadStrategy(edition);
+  changeEdition = edition => {
+    const strategies = stategiesSet[edition];
     this.setState({ edition, strategies });
   };
 
-  loadStrategy = (edition) => {
-    return require(`../editions/${edition}`).default;
-  }
-
   componentDidMount() {
     const { edition } = this.state;
-    const strategies = this.loadStrategy(edition);
-    const { strategyIndex } = this.getStrategy();
+    const strategies = stategiesSet[edition];
+    const { strategyIndex } = this.getStrategy(strategies);
 
     this.setState({ strategies, strategyIndex });
   }
@@ -59,11 +55,13 @@ class ObliqueStrategy extends Component {
           Get another strategy
         </a>
         <div>
-        {Object.keys(editions).map(edition => (
-          <span key={edition}>
-            <a href="#" onClick={() => this.changeEdition(edition)}>{editions[edition]}</a>
-          </span>
-        ))}
+          {Object.keys(editions).map(edition => (
+            <span key={edition}>
+              <a href="#" onClick={() => this.changeEdition(edition)}>
+                {editions[edition]}
+              </a>
+            </span>
+          ))}
         </div>
       </Fragment>
     );
