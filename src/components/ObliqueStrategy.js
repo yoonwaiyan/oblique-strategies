@@ -1,5 +1,5 @@
 import React, { Fragment, Component } from 'react';
-import { Button, Card } from 'semantic-ui-react';
+import Button from './Button';
 import stategiesSet from '../editions';
 
 import './ObliqueStrategy.scss';
@@ -54,27 +54,16 @@ class ObliqueStrategy extends Component {
     return (
       <Fragment>
         <div className="card-container">
-          <Card fluid>
-            <Card.Content>
-              <div className="strategy">{strategy}</div>
-            </Card.Content>
-            <Card.Content extra>
-              <div className="ui two buttons">
-                <Button color="grey" onClick={this.getAnotherStrategy}>
-                  Get another strategy
-                </Button>
-              </div>
-            </Card.Content>
-          </Card>
+          <div className="strategy">{strategy}</div>
+
+          <Button bordered onClick={this.getAnotherStrategy}>
+            Get Another Strategy
+          </Button>
         </div>
 
         <div>
           {Object.keys(editions).map((edition, index) => (
-            <Button
-              key={index}
-              color="yellow"
-              onClick={() => this.changeEdition(edition)}
-            >
+            <Button key={index} onClick={() => this.changeEdition(edition)}>
               {editions[edition]}
             </Button>
           ))}

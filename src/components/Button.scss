@@ -1,0 +1,25 @@
+@import './variables.scss';
+
+.button {
+  padding: 10px;
+  color: $text-color;
+  transition: all 0.15s ease 0s;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    color: $text-color;
+  }
+
+  &.bordered {
+    border: 1px solid $text-color;
+    border-radius: 5px;
+    text-decoration: none;
+
+    &:hover {
+      background-color: $text-color;
+      color: $inverse-text-color;
+      text-decoration: none;
+    }
+  }
+}

@@ -1,18 +1,17 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import ObliqueStrategy from "./components/ObliqueStrategy";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import ObliqueStrategy from './components/ObliqueStrategy';
 
-import 'semantic-ui-css/semantic.min.css';
-import "./styles.css";
+import './styles.scss';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <h1 className="title">Oblique Strategies</h1>
       <ObliqueStrategy />
     </div>
   );
 }
 
-const rootElement = document.getElementById("root");
+const rootElement = document.getElementById('root');
 ReactDOM.render(<App />, rootElement);
