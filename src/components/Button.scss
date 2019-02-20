@@ -22,4 +22,10 @@
       text-decoration: none;
     }
   }
+
+  &.disabled {
+    color: #cccccc;
+    opacity: 0.85;
+    text-decoration: underline;
+  }
 }

@@ -1,23 +1,31 @@
 @import './variables.scss';
 
-.card-container {
-  margin: 50px auto;
-  min-width: 320px;
-  max-width: 640px;
+body {
+  color: $text-color;
+}
 
+.card-container {
+  padding: 50px;
 }
 
 .strategy {
-  color: $text-color;
   font-size: 1.4em;
-
   padding: 50px 20px 40px 20px;
-}
-
-.switch-edition {
-  padding-top: 50px;
 }
 
 .edition-button {
   font-size: 0.9em;
+}
+
+.footer {
+  display: inline-block;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: calc(100% - 40px);
+  padding: 20px;
+  font-size: 0.9em;
+  
+  display: flex;
+  justify-content: space-between;
 }

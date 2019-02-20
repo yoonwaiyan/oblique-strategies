@@ -44,7 +44,7 @@ class ObliqueStrategy extends Component {
   }
 
   render() {
-    const { strategies, strategyIndex } = this.state;
+    const { strategies, strategyIndex, edition: currentEdition } = this.state;
     const strategy = strategies[strategyIndex];
 
     if (strategies.length <= 0) {
@@ -61,16 +61,22 @@ class ObliqueStrategy extends Component {
           </Button>
         </div>
 
-        <div className="switch-edition">
-          {Object.keys(editions).map((edition, index) => (
-            <Button
-              className="edition-button"
-              key={index}
-              onClick={() => this.changeEdition(edition)}
-            >
-              {editions[edition]}
-            </Button>
-          ))}
+        <div className="footer">
+          <div className="switch-edition">
+            Switch Edition:
+            {Object.keys(editions).map((edition, index) => (
+              <Button
+                className="edition-button"
+                key={index}
+                disabled={currentEdition.toString() === edition}
+                onClick={() => this.changeEdition(edition)}
+              >
+                {editions[edition]}
+              </Button>
+            ))}
+          </div>
+
+          <div className="credit">Website developed by Waiyan Yoon.</div>
         </div>
       </Fragment>
     );
