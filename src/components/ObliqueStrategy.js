@@ -76,7 +76,10 @@ class ObliqueStrategy extends Component {
             ))}
           </div>
 
-          <div className="credit">Website developed by Waiyan Yoon.</div>
+          <div className="credit">
+            Original content by Brian Eno and Peter Schmidt. Website by Waiyan
+            Yoon.
+          </div>
         </div>
       </Fragment>
     );
