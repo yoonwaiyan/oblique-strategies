@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/oblique-strategies/static/js/runtime~main.329a08ec.js"
   },
   {
-    "revision": "6883b76259ac904e4cb1",
-    "url": "/oblique-strategies/static/js/main.6883b762.chunk.js"
+    "revision": "8db0ecc83e73de3f7197",
+    "url": "/oblique-strategies/static/js/main.8db0ecc8.chunk.js"
   },
   {
     "revision": "a78adb5463b9abbd058b",
     "url": "/oblique-strategies/static/js/1.a78adb54.chunk.js"
   },
   {
-    "revision": "6883b76259ac904e4cb1",
-    "url": "/oblique-strategies/static/css/main.e8509c16.chunk.css"
+    "revision": "8db0ecc83e73de3f7197",
+    "url": "/oblique-strategies/static/css/main.734265f6.chunk.css"
   },
   {
-    "revision": "7a3b6e7a49e8534f41aa6859f9682d96",
+    "revision": "9c773bf97639290a20e2271852e5b24c",
     "url": "/oblique-strategies/index.html"
   }
 ];
