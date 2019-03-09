@@ -4,6 +4,8 @@ import stategiesSet from '../editions';
 
 import './ObliqueStrategy.scss';
 
+console.log('React version:', React.version);
+
 const editions = {
   1: 'First Edition',
   2: 'Second Edition',
