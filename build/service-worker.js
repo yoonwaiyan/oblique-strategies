@@ -11,10 +11,10 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
+importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/oblique-strategies/precache-manifest.b095f0b35162d7ed4f116a5ac8acbadc.js"
+  "/oblique-strategies/precache-manifest.ee8c2879dffcdd85098f24a15f6931f8.js"
 );
 
 workbox.clientsClaim();
